@@ -66,7 +66,7 @@
 // console.log(numArray3);
 
 
-// Bai tap viet lai ham sort ma khong su dung array.sort
+// BAI TAP: VIET LAI HAM SORT BANG TYPESCRIPT + GENERTIC MA KHONG DUNG ARRAY.SORT
 interface Comparable<T> {
   compareTo(other: T): number;
 }
@@ -98,7 +98,7 @@ console.log(bubbleSort(arr1));
 
 
 
-// Cach khac
+// CACH KHAC
 const numbers = [1, 4, 5, 8, 9];
 const results = SortData(numbers)
 function SortData<T>(arr: T[]): T[] {

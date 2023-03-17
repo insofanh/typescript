@@ -34,7 +34,7 @@ var NumberWrapper = /** @class */ (function () {
 }());
 var arr1 = [new NumberWrapper(9), new NumberWrapper(4), new NumberWrapper(7), new NumberWrapper(2)];
 console.log(bubbleSort(arr1));
-// Cach khac
+// CACH KHAC
 var numbers = [1, 4, 5, 8, 9];
 var results = SortData(numbers);
 function SortData(arr) {
