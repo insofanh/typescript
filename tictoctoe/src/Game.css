@@ -51,6 +51,7 @@
 .game-over {
     padding-top: 10px;
     font-size: 50px;
+    font-weight: bold;
 }
 
 .undo {
@@ -60,9 +61,24 @@
     color: aliceblue;
 }
 
+.undo:hover {
+    margin-top: 30px;
+    background: rgb(248, 68, 68);
+    border-radius: 10px;
+    color: aliceblue;
+}
+
 .play-again {
     margin-top: 20px;
     background: rgb(0, 238, 255);
+    border-radius: 10px;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.play-again:hover {
+    margin-top: 20px;
+    background: rgb(1, 85, 91);
     border-radius: 10px;
     font-size: 25px;
     color: aliceblue;
