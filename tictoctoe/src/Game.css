@@ -1,6 +1,6 @@
-.Game {
+.game {
     font-family: sans-serif;
-    text-align: center;
+    float: center;
 }
 
 .board {
@@ -16,17 +16,17 @@
 
 .square {
     background: rgb(0, 255, 208);
-    border: 1px solid #999;
+    border: 5px solid rgb(230, 230, 230);
     float: left;
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;
-    height: 34px;
+    height: 100px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    width: 100px;
 }
 
 .square:focus {
@@ -42,17 +42,28 @@
 }
 
 .status {
-    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.game-over {
+    padding-top: 10px;
+    font-size: 50px;
 }
 
 .undo {
-    margin-top: 10px;
-    background: rgb(91, 255, 181);
+    margin-top: 30px;
+    background: rgb(255, 1, 1);
     border-radius: 10px;
+    color: aliceblue;
 }
 
 .play-again {
     margin-top: 20px;
     background: rgb(0, 238, 255);
     border-radius: 10px;
+    font-size: 25px;
+    color: aliceblue;
 }

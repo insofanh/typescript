@@ -109,9 +109,9 @@ function Game() {
           <div className="game-over">
             {winner === 'tie' ? 'It is a tie!' : `${winner} wins!`}
            
-            <button className="play-again" onClick={resetGame}>
-          Play again
-        </button>
+            <div><button className="play-again" onClick={resetGame}>
+          Play Again!
+        </button></div>
       </div>
     ) : (
       <>
@@ -133,13 +133,20 @@ function Game() {
         </div>
       </>
     )}
-    {showUndo && (
+   {showUndo && (
       <button className="undo" onClick={undoMove}>
         Undo
       </button>
     )}
   </div>
-</div>
+  <div>
+      
+  </div>
+  </div>
+  
+
+
 );
+
 }
 export default Game
