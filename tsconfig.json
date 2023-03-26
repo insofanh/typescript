@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "outDir": "dist", //output directtive
-        "watch": true,
+        // "watch": true,
         "strictNullChecks": true
     },
     "include": ["src", "dataTypes", "dataTypes"]

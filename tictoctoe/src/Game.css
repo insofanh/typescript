@@ -1,0 +1,58 @@
+.Game {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.board {
+    display: inline-block;
+    margin: 20px;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.square {
+    background: rgb(0, 255, 208);
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.square.X {
+    color: blue;
+}
+
+.square.O {
+    color: red;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.undo {
+    margin-top: 10px;
+    background: rgb(0, 255, 140);
+    border-radius: 10px;
+}
+
+.play-again {
+    margin-top: 20px;
+    background: rgb(0, 238, 255);
+    border-radius: 10px;
+}
