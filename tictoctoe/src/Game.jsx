@@ -10,6 +10,9 @@ function Game() {
   const [gameOver, setGameOver] = useState(false);
   const [prevBoard, setPrevBoard] = useState([]);
   const [showUndo, setShowUndo] = useState(false);
+  const [hasUsedUndoX, setHasUsedUndoX] = useState(false);
+  const [hasUsedUndoO, setHasUsedUndoO] = useState(false);
+
 
   useEffect(() => {
     checkWinner();
@@ -36,11 +39,21 @@ function Game() {
   };
 
   const undoMove = () => {
-    setBoard([...prevBoard]);
-    setPrevBoard([]);
-    setXIsNext(!xIsNext);
-    setShowUndo(false);
+    if (xIsNext && !hasUsedUndoX) { // nếu đến lượt X và chưa sử dụng undo
+      setBoard([...prevBoard]);
+      setPrevBoard([]);
+      setXIsNext(!xIsNext);
+      setShowUndo(false);
+      setHasUsedUndoX(true); // đánh dấu rằng người chơi X đã sử dụng undo
+    } else if (!xIsNext && !hasUsedUndoO) { // nếu đến lượt O và chưa sử dụng undo
+      setBoard([...prevBoard]);
+      setPrevBoard([]);
+      setXIsNext(!xIsNext);
+      setShowUndo(false);
+      setHasUsedUndoO(true); // đánh dấu rằng người chơi O đã sử dụng undo
+    }
   };
+  
 
   const checkWinner = () => {
     const winningLines = [
